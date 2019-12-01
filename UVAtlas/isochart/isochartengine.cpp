@@ -405,7 +405,7 @@ HRESULT CIsochartEngine::GenerateNewChartsToParameterize()
             }
         }				
     }
-    m_finalChartList.erase(m_finalChartList.begin() + dwMaxIdx);
+    m_finalChartList.erase(m_finalChartList.begin() + ptrdiff_t(dwMaxIdx));
     return S_OK;
 }
 
